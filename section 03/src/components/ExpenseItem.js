@@ -1,5 +1,20 @@
-function ExpenseItem() {
-  return <h2>Expense item!</h2>
+import './ExpenseItem.css'
+
+function ExpenseItem(props) {
+  const expenseDate = props.date;
+  const expenseTitle = props.title;
+  const expenseAmount = props.amount;
+  return (
+    <div className='expense-item'>
+      <div>{props.date.toISOString().substring(0, 19).replaceAll('T', ' ')}</div>
+      <div className='expense-item__description'>
+        <h2>{props.title}</h2>
+      </div>
+      <div className='expense-item__price'>
+        {props.amount}
+      </div>
+    </div>
+  );
 }
 
 export default ExpenseItem
