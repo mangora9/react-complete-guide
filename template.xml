@@ -1,0 +1,8 @@
+<template name="rus" value="const [$CONSTANT$, set$CAPITALIZED_CONSTANT$] = useState($END$);" description="Create useState" toReformat="false" toShortenFQNames="true">
+  <variable name="CONSTANT" expression="" defaultValue="" alwaysStopAt="true" />
+  <variable name="CAPITALIZED_CONSTANT" expression="capitalize(CONSTANT)" defaultValue="" alwaysStopAt="false" />
+  <context>
+    <option name="JAVA_SCRIPT" value="true" />
+    <option name="TypeScript" value="true" />
+  </context>
+</template>
