@@ -10,10 +10,10 @@ const App = () => {
     setUserList((prevState) => [user, ...prevState]);
   }
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler}/>
       <UserList users={userList}/>
-    </div>
+    </>
   );
 }
 
