@@ -1,10 +1,10 @@
 import React from 'react';
+import EventForm from "../components/EventForm";
+import {json, redirect} from "react-router-dom";
 
 const NewEventPage = () => {
   return (
-    <>
-      <h1>New Event Page</h1>
-    </>
+    <EventForm method='post'/>
   );
 };
 
